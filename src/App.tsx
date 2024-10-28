@@ -14,6 +14,7 @@ import MembersPage from './pages/tables/members';
 import VirtualizedTablePage from './pages/tables/virtualized';
 import FormBasicPage from './pages/forms/basic';
 import FormWizardPage from './pages/forms/wizard';
+import Login from './pages/login/Login';
 import { appNavs } from './config';
 
 const App = () => {
@@ -33,6 +34,7 @@ const App = () => {
             <Route path="form-basic" element={<FormBasicPage />} />
             <Route path="form-wizard" element={<FormWizardPage />} />
           </Route>
+          <Route path='/login' element={<Login/>}></Route>
           <Route path="*" element={<Error404Page />} />
         </Routes>
       </CustomProvider>
